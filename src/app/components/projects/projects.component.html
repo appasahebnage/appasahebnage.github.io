@@ -1,17 +1,19 @@
-<section class="bg-white rounded-lg shadow p-6 sm:p-8 dark:bg-gray-800 antialiased mt-6">
+<section class="bg-white rounded-lg shadow p-6 sm:p-8 antialiased mt-6">
     <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-2xl font-semibold text-gray-800 dark:text-white sm:text-3xl">
+        <h2 class="text-2xl font-semibold text-gray-800 sm:text-3xl">
             Projects
         </h2>
     </div>
 
     <div>
         @for (project of projects; track $index) {
-            <a href="{{project.demoUrl}}" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mt-4">
-                <img class="object-cover w-full rounded-t-lg h-100 border border-gray-200 ml-2 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="npm-package-sreenshot.png" alt="Npm Package">
+            <a href="{{project.demoUrl}}" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 mt-4">
+                @if (project.image) {
+                <img class="object-cover w-full rounded-t-lg h-100 border border-gray-200 ml-2 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="{{project.image}}" alt="{{project.name}}">
+                }
                 <div class="flex flex-col justify-between p-4 leading-normal">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ project.name }}</h5>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ project.description }}</p>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{ project.name }}</h5>
+                    <p class="mb-3 font-normal text-gray-700">{{ project.description }}</p>
                 </div>
             </a>
         <!-- <div class="mb-6">

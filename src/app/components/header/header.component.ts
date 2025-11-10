@@ -8,20 +8,20 @@ import { FlowbiteService } from '../../services/flowbite.service';
   standalone: true,
   imports: [RouterModule, CommonModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrl: './header.component.css',
 })
 export class HeaderComponent {
   activeSection: string = 'home';
   constructor(private flowbiteService: FlowbiteService) {}
 
   ngOnInit(): void {
-    this.flowbiteService.loadFlowbite(flowbite => {
+    this.flowbiteService.loadFlowbite((flowbite) => {
       console.log('Flowbite loaded', flowbite);
     });
-    
+
     // Check initial hash on page load
     this.checkActiveSection();
-    
+
     // Listen for hash changes
     window.addEventListener('hashchange', () => {
       this.checkActiveSection();

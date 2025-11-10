@@ -15,6 +15,23 @@ export class ProjectsComponent {
       repoUrl: 'https://github.com/appasahebnage/nest-paapi-5',
       demoUrl: 'https://www.npmjs.com/package/nest-paapi-5?activeTab=readme',
       techStack: ['NestJs', 'TypeScript', 'JavasScript'],
+      image: 'npm-package-sreenshot.png',
+    },
+    {
+      name: 'Prisma to Zod Schema Generator',
+      description:
+        `Built a code generator to convert Prisma schema definitions into Zod validation schemas for CRUD operations in NestJS. Supports field-level decorators (@create, @update) and ensures tight sync between models and validation logic, minimizing manual effort.`,
+      repoUrl: 'https://github.com/appasahebnage/prisma-zod-nest-gen',
+      demoUrl: 'https://github.com/appasahebnage/prisma-zod-nest-gen',
+      techStack: ['NestJs', 'TypeScript', 'Prisma', 'Zod'],
+    },
+    {
+      name: 'NestJS Starter with JWT Authentication',
+      description:
+        `Created a production-ready NestJS boilerplate with JWT-based authentication. Includes role-based access control, modular structure, and security best practices for quick backend project bootstrapping.`,
+      repoUrl: 'https://github.com/appasahebnage/nestjs-starter-with-jwt',
+      demoUrl: 'https://github.com/appasahebnage/nestjs-starter-with-jwt',
+      techStack: ['NestJs', 'TypeScript', 'JWT', 'Authentication'],
     },
   ];
 }

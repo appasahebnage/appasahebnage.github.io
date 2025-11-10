@@ -7,6 +7,7 @@ export interface Experience {
 }
 
 export const CompanyNames = {
+    OptimizeAds: "OptimizeAds",
     Hypelinks: "Hypelinks",
     DemandHelm: "DemandHelm"
 }

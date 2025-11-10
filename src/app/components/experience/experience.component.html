@@ -1,7 +1,7 @@
 <!-- Experience -->
-<section class="bg-white rounded-lg shadow p-6 sm:p-8 dark:bg-gray-800 antialiased mt-6">
+<section class="bg-white rounded-lg shadow p-6 sm:p-8 antialiased mt-6">
     <div class="max-w-3xl mx-auto">
-        <h2 class="text-2xl font-semibold text-gray-800 dark:text-white sm:text-3xl text-center">{{ title }}</h2>
+        <h2 class="text-2xl font-semibold text-gray-800 sm:text-3xl text-center">{{ title }}</h2>
         <div class="mx-auto max-w-4xl">
             <!-- Company Experiences -->
             @for (companyExperience of companyExperiences; track $index) {
@@ -19,11 +19,11 @@
                     </a>
                 </p>
             </div>
-            <div class="relative ml-12 border-s border-gray-200 dark:border-gray-700">
+            <div class="relative ml-12 border-s border-gray-200">
                 <div class="space-y-8 mb-12 ms-4 last:mb-0">
                     @for (experience of companyExperience.experiences; track $index) {
                     <div
-                        class="absolute w-3 h-3 bg-red-500 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900">
+                        class="absolute w-3 h-3 bg-red-500 rounded-full mt-1.5 -start-1.5 border border-white">
                     </div>
                     <div class="bg-white rounded-lg shadow-md md:ml-12" @fadeIn>
                         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
@@ -32,7 +32,7 @@
                             </h6>
                         </div>
 
-                        <ul class="space-y-3 ml-4">
+                        <ul class="space-y-3 ml-4 pb-4">
                             @for (achievement of experience.points; track $index) {
                             <li class="relative pl-6">
                                 <div class="absolute left-0 top-2 w-1.5 h-1.5 bg-gray-600 rounded-full"></div>
