@@ -26,7 +26,7 @@ export class ExperienceComponent {
     {
       companyName: CompanyNames.OptimizeAds,
       location: 'Remote',
-      duration: '8 mos',
+      duration: '9 mos',
       logo: 'optimize-ads-icon.png',
       website: 'https://optimizeads.com',
       experiences: [
@@ -34,7 +34,7 @@ export class ExperienceComponent {
           position: 'Engineering Manager',
           startDate: 'Mar 2025',
           endDate: 'Present',
-          duration: '8 mos',
+          duration: '9 mos',
           points: [
             'Designed monorepo architecture for shared code management and API contract synchronization, improving cross-team collaboration and enabling 70% accurate AI-powered code suggestions',
             'Architected 120+ REST APIs with flexible authorization supporting both JWT tokens and API keys, serving 5K+ daily requests',
@@ -48,7 +48,7 @@ export class ExperienceComponent {
     {
       companyName: CompanyNames.Hypelinks,
       location: 'Remote',
-      duration: '1 yrs 2 mos',
+      duration: '2 yrs',
       logo: 'hypelinks_logo.jpeg',
       website: 'http://hypelinks.com',
       experiences: [
@@ -56,7 +56,7 @@ export class ExperienceComponent {
           position: 'Engineering Manager',
           startDate: 'Nov, 2023',
           endDate: 'Present',
-          duration: '1 yrs 2 mos',
+          duration: '2 yrs',
           points: [
             'Architected multi-tenant platform backend with separate REST APIs and data models supporting 1,000+ creators and brands with distinct onboarding workflows and authorization patterns',
             'Built custom attribution system tracking Google Ads conversions (gclid) to Amazon sales, enabling accurate ROI measurement for campaigns',
